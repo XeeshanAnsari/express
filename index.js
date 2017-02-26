@@ -1,5 +1,6 @@
 var express=require ("express");
  
+var a = (process.env.PORT || 3000)
 
  var app = express();
  
@@ -10,6 +11,6 @@ var express=require ("express");
      res.send("hello express")
  });
  
- app.listen(3000,function(){
+ app.listen(a,function(){
      console.log(" your  app is running")
  });
